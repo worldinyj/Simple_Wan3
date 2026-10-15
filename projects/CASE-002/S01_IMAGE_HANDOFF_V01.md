@@ -28,3 +28,7 @@ Store media and report locally only; source report remains outside public repo. 
 - S01 VO V01 7.706s; V02 revised narration 7.079s. Both overrun 6-second slot. Preserve both; audio timing correction pending, recommend natural speed-adjusted V02 test or shortened line.
 - End-to-end S01 scene retains 6-second video slot; do not retime visuals without coordinating next scene.
 - Next human gate: watch original S01 and approve imagery. After approval, S02 separate START/END images and motion prompt; final narration/BGM mix deferred until approved visual rough cut.
+
+## Human gate update
+- 2026-10-15: user explicitly approved S01 motion and authorized S02. Mark S01 MOTION ACCEPTED_HUMAN (not audio-synced final master). Original MP4 should be stored at `media/CASE-002/motion/CASE-002_S01_MOTION_V01.mp4`.
+- Audio V02 has >6s duration; defer final sound mix until voice timing correction.
