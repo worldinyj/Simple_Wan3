@@ -1,0 +1,15 @@
+# Generated media and raw source reports: local first
+media/**
+!media/.gitkeep
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.pdf
+*.hwp
+*.hwpx
+*.docx
+.env
+.env.*
+.DS_Store
+__pycache__/
