@@ -1,51 +1,30 @@
-# CASE-001 — Shot prompts, narration and audio cue sheet V1
+# CASE-001 — historic prompts, scene cues and audio record (2026-10-15)
 
-Status: **working record**, narration is draft only and has not been synthesized/mixed. 6s/shot target, total ~36s. Names must match local media/CASE-001 files.
+**Use as a retrospective and optional style reference, not a substitute for facts in CASE-002.** The initial S01–S06 English prompts were iterated through chat; strongest production-safe versions and outcomes are summarized below. Original exact historical prompts may differ in small wording from these succinct recaps. Rendered VO/BGM exist locally, not in Git.
 
-## S01 — establishing (APPROVED V02)
-**Motion prompt (EN):**
-Single continuous 6-second camera shot. Begin with wide establishing view of miniature plant. Slowly dolly toward control room, preserving exact plant geometry, pipes, staff, color, and lighting. No zoom-out, crossfade, double exposure, sudden camera move, alarms, or object morphing.
-**Narration (KO draft):** 2026년 8월, 새울3호기는 부하상실 시운전시험을 마치고 소내부하운전 중이었습니다.
-**BGM/SFX:** neutral documentary bed, no alarm, quiet control-room ambience.
+| Shot | Actual chosen motion | Camera/action prompt intent | Final graphic & audio intent |
+|---|---|---|---|
+| S01 | S01_MOTION_V02.mp4 | single smooth miniature plant dolly, maintain toy geometry; no double exposure | post-test house-load plant intro |
+| S02 | S02_MOTION_V01.mp4 | standing senior instructs seated operator, subtle keypad press, stable simplified plastic characters | VPL mistaken entry: previous 64.55%, intended 11.68%, entered 6.67%; **numeric overlay not AI frame** |
+| S03 | S03_MOTION_V01.mp4 | slowly restrict control valve, stationary camera, prevent model morphs | controlled overlay turbine ~1794→1689rpm, generator ~59.7→55.8Hz |
+| S04 | S04_MOTION_V01.mp4 | reactor coolant pump illustrative slowdown, benign protection actuation; no catastrophe | controlled overlays RCP ~1190→1130rpm, High-LPD/Low-DNBR trip |
+| S05 | S05_MOTION_V01.mp4 | SW02B low voltage; SAT already open in depicted final period; EDG already RUNNING, output breaker close; no red/blue electrical flow animation | controlled summary: SAT temporarily closed then reopened; EDG supplies B train |
+| S06 | S06_MOTION_V02.mp4 from S06_START_V03.png & S06_END_V03.png | four uncovered-head toy control room workers complete procedure verification, fixed camera, **no helmets**, no reactor restart or celebration | 18s extended ending; last lesson screen from global 37s through 48s |
 
-## S02 — VPL input error (APPROVED V01)
-**Motion prompt (EN):**
-One continuous 6-second shot in miniature plastic-toy control room. Standing senior operator calmly instructs seated turbine operator, who presses console buttons. Senior leans slightly forward. Fixed camera, same simplified no-face or minimal-face toy workers, no cuts, morphing or pop-in text.
-**Narration (KO draft):** 계통병입을 준비하던 중, 운전원은 터빈제어밸브 위치제한기 설정값을 잘못 입력했습니다.
-**Critical editing note:** intended 11.68%, entered 6.67%; actual previous setting 64.55%. Numeric overlay only in controlled edit.
-**BGM/SFX:** soft button press, restrained unease.
+## Voice timing
+| Shot | Video global interval | Source MP3 | Measured duration |
+|---|---|---|---|
+| S01 | 0–6s | CASE-001_S01_VO_V0.mp3 | 4.52s |
+| S02 | 6–12s | CASE-001_S02_VO_V0.mp3 | 5.80s |
+| S03 | 12–18s | CASE-001_S03_VO_V0.mp3 | 5.64s |
+| S04 | 18–24s | CASE-001_S04_VO_V0.mp3 | 5.56s |
+| S05 | 24–30s | CASE-001_S05_VO_V0.mp3 | 5.49s |
+| S06 | 30–48s | CASE-001_S06_VO_V0.mp3 | 14.45s |
 
-## S03 — turbine valve closure (MOTION V01, CONTROLLED EDIT)
-**Motion prompt (EN):**
-One continuous 6-second miniature toy turbine control valve and generator. Valve stem slowly moves downward. Turbine generator gradually slows in response to reduced steam flow. Keep equipment, pipes, lighting and locked camera stable; no cuts, morphing, dramatic alarm or animated numbers.
-**Narration (KO draft):** 잘못된 설정값으로 터빈제어밸브가 닫히면서 발전기 주파수와 터빈속도가 감소했습니다.
-**Overlay:** generator frequency 59.7 -> 55.8 Hz; turbine speed 1794 -> 1689 rpm. Visual valve movement alone does not prove turbine rotation change.
-**BGM/SFX:** controlled low mechanical deceleration, no catastrophic sound.
+## Narration content summary (NOT verbatim transcription)
+S01: test complete and house-load context; S02: unplanned VPL wrong value; S03: turbine/generator slowdown; S04: RCP slowdown then automatic protection trip; S05: undervoltage and pre-running EDG breaker supply; S06: EOP-based stabilization and lessons of pre-job review, questioning/cross-check and communication.
 
-## S04 — RCP decrease and reactor trip (MOTION V01, CONTROLLED EDIT APPROVED)
-**Motion prompt (EN):**
-One uninterrupted 6-second miniature plastic toy plant cutaway. RCPs gradually slow in an illustrative manner; reactor protection system responds and plant trips. Dim reactor-core illustrative glow, illuminate limited control-room status lights. Maintain all geometry, neutral stable camera, no fire, smoke, or destruction.
-**Narration (KO draft):** 냉각재펌프 속도가 보호기준까지 떨어져 원자로보호계통이 작동하고 원자로가 자동정지했습니다.
-**Overlay:** approximately 1190 -> 1130 rpm; High-LPD / Low-DNBR protection trip. Core glow is symbolic, not literal reactor appearance.
-**BGM/SFX:** short restrained signal, then soft controlled room ambience.
+## BGM
+`CASE-001_BGM_FLOW_V01.wav` Google Flow Music instrumental, restrained technical documentary mood. In mix fade-in 1.5s, last 4s fade-out, BGM ~-20.4dB below its original level. No verified separate SFX stem.
 
-## S05 — SW02B LOV and EDG power (FRAMES REVISED, MOTION PENDING)
-**Motion prompt (EN):**
-One continuous six-second shot of a miniature 3D plastic toy electrical switchgear diorama. SW02B low voltage indication is present; SAT incoming breaker stays OPEN. Emergency diesel generator EDG 01B is already running and waiting, NOT starting. The EDG output breaker transitions OPEN to CLOSED, then the B-train bus is shown as supplied, with a clean green energized-flow indicator. Maintain exactly identical panel geometry, camera angle, operators and machine positions. No cuts, no morphs, no invented numerical values or extra switching.
-**Narration (KO draft):** 안전모선 SW02B에 저전압이 발생하자 대기 중이던 비상디젤발전기가 B계열 안전모선에 전력을 공급했습니다.
-**Chronology note:** report records SW02B LOV at 20:56:17.159, SAT closing then opening, EDG breaker close near 20:56:18.759/786. These remain editorial narrative, not literal real-time six-second replay.
-**BGM/SFX:** brief restrained breaker click; calm stable power hum.
-
-## S06 — stabilization and lesson (PLANNED)
-**Motion prompt (EN; preliminary only):**
-Quiet miniature toy control-room scene. Operators methodically follow emergency procedures, monitoring stabilized plant indications. Slow static camera, stable identical simplified toy characters, no panic or dramatic damage. Final frame calmly emphasizes stable conditions without text morphing.
-**Narration (KO draft):** 운전원은 비상운전절차를 수행해 안전기능을 유지했습니다. 정확한 확인과 의사소통이 재발방지의 핵심입니다.
-**BGM/SFX:** gentle resolution, fade-out.
-
-## Audio production V1
-- Separate **Narration (KO)**, **BGM** and **SFX** stems; don't generate speech within Wan clip.
-- One voice, consistent neutral instructional Korean tone, WAV 48 kHz where possible.
-- BGM instrumental, no lyrics; low level beneath narration; avoid alarm-like effects.
-- SFX: minimal console action, breaker clicks, low industrial ambience; distinguish sonic decoration from real recorded evidence.
-- Work order: lock six video shots -> review timing -> synthesize voice -> select/generate music -> assemble/duck BGM -> QA final MP4.
-- Do not call draft narrations final until timing and factual review; 6s voice durations must be measured.
+See `FINAL_HANDOFF_2026-10-15.md` for accepted master and publication caveats.
