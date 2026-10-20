@@ -10,3 +10,6 @@
 
 Higgsfield public API documentation indicates Prime image-to-video accepts a first image and optional last image, duration 2–30s and common aspect ratios; this does not guarantee identical controls in the website subscription UI.
 Reference: https://open.higgsfield.ai/models/alibaba/wan-3.0-prime/image-to-video/api-reference
+
+## CASE-004+ UI-confirmed override (2026-10-20)
+User supplied Higgsfield screenshot: **Wan 3.0 / 8s / 1080p / Unlimited ON**. For new cases, set 16:9, use **two approved individual START and END master-derived PNGs** where interface supports both, motion sound OFF. Do not assume subscriptions or API costs remain constant. Save `media/CASE-NNN/motion/CASE-NNN_S01_MOTION_V01.mp4` and inspect actual file duration before assembly. See [NEXT_CASE_RUNBOOK.md](NEXT_CASE_RUNBOOK.md). Existing 6s workflow above is historical, not CASE-004 default.
