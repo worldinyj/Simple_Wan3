@@ -28,3 +28,6 @@ No Hermes orchestration, manifest bureaucracy, API keys or automatic paid genera
 **HOLD:** technical facts unresolved; human verifies before depiction.
 
 Model/platform subscription terms and model features can vary. Confirm the 7-day unlimited entitlement and UI support before each batch; do not assume API usage is free.
+
+## CASE-004+ production override (2026-10-20)
+Use [NEXT_CASE_RUNBOOK.md](NEXT_CASE_RUNBOOK.md) V3: **~120 seconds / 15 × 8-second slots / 1080p** when available, intro/ending included. Require **report fact-gate → storyboard approval → location/equipment/character/control-screen master approvals → each START+END approval → Wan 3 motion QC**. This override replaces the 6s default above only for new cases; older cases keep their approved settings. TXT-tagged ElevenLabs narration plus separate BGM and phrase-to-lesson-caption sync are mandatory post stages.
