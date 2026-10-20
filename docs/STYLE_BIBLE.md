@@ -20,3 +20,6 @@ photorealism, live action, realistic human skin, official power plant logos, tra
 
 ## Frame continuity
 Keep all static objects anchored; change **only one clearly defined physical state** from START to END. Do not move camera and object simultaneously unless a shot card deliberately specifies it. Ending frame must be physically reachable from the starting frame.
+
+## CASE-004+ master-first continuity (2026-10-20)
+Before scene-specific frames, approve stable IDs for LOC (location), EQ (equipment scale/topology), CHAR (people, wardrobe, exactly two arms/two hands), CTRL (control displays). Derive each individual START and END from approved masters. Keep static background and camera identical within a shot. Avoid exaggerated LEGO-like figures, fake technical readouts and extra headings; exact text is post-production overlay. Use Wan 3.0 8s 1080p settings per [NEXT_CASE_RUNBOOK.md](NEXT_CASE_RUNBOOK.md). Prior case style approvals remain historical.

@@ -8,11 +8,11 @@
 - 가장 중요한 최종 수정: 나레이션 교훈 시작 약 37초에 맞춰 교훈 화면 시작을 42초에서 **37초**로 조정.
 - 영상 내 3D 미니어처는 교육용 개념도이며 원전 실제 설계·설비 형상과 동일하지 않습니다.
 
-## 다른 사건 시작하기 (CASE-002 이상)
+## 다른 사건 시작하기 (CASE-004 onward defaults, CASE-001~003 historical)
 1. **[새 사건 제작 런북](docs/NEXT_CASE_RUNBOOK.md)** 읽기.
 2. **[새 케이스 템플릿](docs/CASE_TEMPLATE.md)** 복사하여 `projects/CASE-002/`에 문서 생성, 로컬에 `media/CASE-002/` 폴더 준비.
 3. 조사보고서는 채팅으로 공유하되 외부공개 승인되지 않은 원문·실제 민감 설비 도면을 공개 GitHub에 넣지 말기.
-4. 사고 사실 검증 → 6초 단위 샷 계획 → 각각 분리된 START·END PNG → Higgsfield 수동 생성 → 영상 QC → 통제형 편집 → ElevenLabs VO → Google Flow Music → 합성·동기화 QC.
+4. **CASE-004 이후 새 기본값:** 약 120초 영상, Higgsfield Wan 3.0 **8초/1080p/16:9/Unlimited UI 확인**, 보고서 원문 사실검증 → 8초 씬 스토리보드 승인 → **장소·설비·인물·제어화면 베이스 이미지 승인** → 개별 START/END PNG → Wan 3 수동 생성 → 영상 QC → 통제형 편집 → TXT 태그 기반 ElevenLabs VO → Google Flow Music → 나레이션-자막 의미 동기화 QC. 기존 CASE-001~003의 길이 및 승인본은 변경하지 않습니다.
 5. 승인 기록과 최종 영상/음성 파일명을 GitHub **문서**에 반영; 실제 미디어는 로컬에 별도 보관.
 
 추가 참고: [workflow](docs/WORKFLOW.md) · [style](docs/STYLE_BIBLE.md) · [audio](docs/AUDIO_POST.md) · [manual](docs/HIGGSFIELD_MANUAL.md) · [CASE-001 cues](projects/CASE-001/SHOTS_AND_AUDIO.md).
