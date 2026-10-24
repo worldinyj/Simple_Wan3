@@ -1,3 +1,40 @@
+# Grok Imagine vertical production V4 — effective for the NEXT new case (2026-10-24)
+
+> Precedence: V4 is the default for new cases. CASE-001–004 records, approved video variants, and the 16:9 Wan 3 workflows remain historical; never silently re-edit or overwrite them.
+> User originally requested **460p**, but official xAI/Runway Grok Imagine specifications enumerate **480p, 720p, 1080p** rather than 460p. Operational preset: **480p**; check the actual UI before each generation. The target is **9:16 / 6 seconds per clip / approximately 120 seconds total (20 clips × 6s)**, adaptable to source facts and narration.
+> References: https://docs.x.ai/developers/model-capabilities/video/generation and https://help.runwayml.com/hc/en-us/articles/53995376768147-Creating-with-Grok-Imagine-1-5
+
+## Non-negotiable continuity gates
+1. **Source first:** read full incident report privately and build chronology with page-specific FACT / INFERENCE / EDUCATIONAL tags. Do not invent plant topology, names, physical movements, alarms, or radiation effects.
+2. **Twenty-slot storyboard:** aim for S00–S19, 6s each, including intro, core event, response, RCA, improvements, and lesson; revise slot count only with clear reason. Avoid long sequences of nearly motionless caption cards; show the physical causal story where accurately supportable.
+3. **LOCK cast + sites + equipment BEFORE shots:** approve one character reference sheet per CHAR-ID (head, body, PPE, clothing, scale), one location atlas per LOC-ID (architecture, entrances, machinery positions, camera anchors), and one equipment sheet per EQ-ID (geometry, pipe topology, controls). Save private image masters locally. Consistency across adjacent scenes is an acceptance condition, not a stylistic preference.
+4. **Scene genealogy:** each shot card lists the exact source master IDs, preceding shot, a continuity bridge (previous final frame or approved angle-matched reference), camera axis, one allowable action, and explicitly forbidden changes. Reference media use only the provider-supported inputs in the real UI. For image-to-video, prepare a true **9:16** source image (its aspect ratio may dictate video output).
+5. **Short 6s bounded motion:** only one action and one spatial anchor per clip. Fixed or physically justified camera. Do not ask a model to rotate a stationary machine to reveal its side; move a person or use separate controlled cuts when needed. Never assume character consistency from the text prompt alone.
+6. **QC before costly retry:** verify 6s, vertical aspect, actual resolution, subject count/limbs, wardrobe, facial/model identity, valve and equipment geometry, floorplan, motion plausibility, frame-edge continuity, false technical captions. PASS / CONTROLLED_EDIT / REGENERATE_WITH_APPROVAL / HOLD. Record regeneration cost and preserve original.
+7. **Audio, graphics, assembly:** separate user-approved ElevenLabs narrator and instrumental BGM; graphical text and exact values added in post. Sync lesson captions to voice onset, not arbitrary 6s boundaries. Composite 20 clips (~120s), check scene joins and portrait safe zones.
+8. **Public-repo protection:** do not commit investigation PDFs, actual facility identity, confidential details, reference photographs, videos, audio, keys, private filenames, or unapproved screenshots. GitHub tracks only generic runbooks, anonymized schemas and permitted project status. All source/media local.
+
+## New case handoff
+First command:
+```zsh
+cd /Users/kevin/Projects/Simple_Wan3 || exit 1
+CASE=CASE-005  # replace with next unused case ID after checking
+mkdir -p "projects/$CASE" "media/$CASE"/{reference,storyboard,base_images,images,motion,audio,edits,deliverables,archive}
+git status --short --branch
+```
+Then request report, review facts, propose storyboard (S00–S19), approve continuity masters, create scenes and verify each video, assemble, add VO/BGM, complete QC and human acceptance.
+
+## CASE-004 retrospective (process-only; no confidential report detail)
+- The ~120s edit was assembled, but the user judged identity continuity and spatial/equipment continuity inadequate.
+- Generating frames scene by scene, even when each clip locally passes technical QC, does **not** guarantee global continuity. Snapshot backgrounds + caption cards can dilute animated storytelling.
+- Repeated split-panel instead of two independent frames and hallucinated mechanical shapes caused costly reruns; enforce reusable reference assets, per-scene lock checks, standalone images and preflight before generation.
+- An animated move from front to side caused stationary equipment to morph rather than a character to move; require physically plausible action and stop generation when start/end geometry is contradictory.
+- Local Git clone cannot be modified by the GitHub connector. After remote merge, use safe fetch/pull with local status checked; do not claim local sync from a remote operation.
+
+---
+
+## Historical V3 record (Wan 3 / CASE-004)
+
 # Next-case production runbook V3 — 8-second Wan 3 / master-first (2026-10-20)
 
 > Supersedes V2 defaults **for CASE-004 onward**. Earlier CASE-001~003 approvals, runtimes, and deliverables remain historical records. No automatic re-edit.
