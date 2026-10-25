@@ -9,3 +9,5 @@ This is an anonymized production checkpoint only. The incident report, incident 
 - Gate 3: motion generation NOT AUTHORIZED.
 - Publishing rule: Only this generic gate record is public; no real facility or incident details, technical as-built topology, or media.
 - Synchronization: remote branch updated; local Mac clone requires a separately verified pull. Do not mark local synced without a successful local command.
+
+- Gate 2B composite V03: source-preserving cutout pilot failed visual QC due to silhouette/matte clipping; NOT APPROVED. No locked master modified; motion generation remains unauthorized.
