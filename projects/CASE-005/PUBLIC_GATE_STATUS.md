@@ -11,3 +11,5 @@ This is an anonymized production checkpoint only. The incident report, incident 
 - Synchronization: remote branch updated; local Mac clone requires a separately verified pull. Do not mark local synced without a successful local command.
 
 - Gate 2B composite V03: source-preserving cutout pilot failed visual QC due to silhouette/matte clipping; NOT APPROVED. No locked master modified; motion generation remains unauthorized.
+
+- Gate 2B cutout V04: CHAR-01 head/eyeglasses preserved in local pixel-derived candidate, but background remnants around shoulder failed alpha-matte QC. HOLD; source masters unchanged. No generation authorized.
