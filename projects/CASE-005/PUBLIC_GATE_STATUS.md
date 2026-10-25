@@ -17,3 +17,4 @@ This is an anonymized production checkpoint only. The incident report, incident 
 - Gate 2B cutout V06B: non-generative shoe-area cleanup improved matte; minor edge contamination still detected. QC HOLD. Locked master assets remain unchanged. No motion authorized.
 - Gate 2B cutout V07: automated lower-body matte diagnostic QC FAIL (hand boundary degradation and background remnant). Shift to human-guided masking; no locked masters changed or motion authorized.
 - Gate 2B manual matte V08: local editable alpha-mask and vector outline handoff prepared from prior candidate without alteration of locked source assets. Human edge cleanup and QC remain HOLD; no motion authorized.
+- Gate 2B cutout V09: local alpha-only refinement removed major lower-left background wedge while preserving source RGB; small residual strip remains. QC HOLD. No locked master changed; in-scene continuity and motion generation still unauthorized.
