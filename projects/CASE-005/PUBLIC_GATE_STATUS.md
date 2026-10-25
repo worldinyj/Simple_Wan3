@@ -14,3 +14,4 @@ This is an anonymized production checkpoint only. The incident report, incident 
 
 - Gate 2B cutout V04: CHAR-01 head/eyeglasses preserved in local pixel-derived candidate, but background remnants around shoulder failed alpha-matte QC. HOLD; source masters unchanged. No generation authorized.
 - Gate 2B cutout V05: local non-generative matte cleanup improved shoulder background removal; residual lower/background edge artifacts remain. QC HOLD, no in-scene approval, no provider authorization. Source masters unchanged.
+- Gate 2B cutout V06B: non-generative shoe-area cleanup improved matte; minor edge contamination still detected. QC HOLD. Locked master assets remain unchanged. No motion authorized.
